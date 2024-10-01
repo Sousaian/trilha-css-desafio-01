@@ -1,46 +1,42 @@
-
-body{
+/* Estilos Globais */
+body {
     background-color: #000000;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.banner{
-    background-image: linear-gradient(
-    #00000099,
-    #31a8dd33,
-    #00000099),
-    url('../images/banner.png');
+/* Banner */
+.banner {
+    background-image: linear-gradient(#00000099, #31a8dd33, #00000099), url('../images/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 100vh; 
     padding-top: 60px;
     border-bottom: 1px solid #33A8DB80;
 }
 
-.banner .banner-content{
-    color:#f5f5f5;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.banner-content {
+    color: #f5f5f5;
+    width: 100%; 
+    max-width: 600px; 
     margin: auto;
     text-align: center;
 }
 
-.banner-content h1{
-    font-size: 48px;
+.banner-content h1 {
+    font-size: 3rem; 
     text-transform: uppercase;
     color: transparent;
-    background: -webkit-linear-gradient(
-    #33A8DB,
-    #1472B7);
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
     background-clip: text;
 }
 
-.banner .banner-content p{
-    font-size: 30px;
+.banner-content p {
+    font-size: 1.5rem;
     margin: 16px 0 32px 0;
 }
-.banner .banner-content button {
+
+.banner-content button {
     color: #31A8DD;
     font-size: 1rem;
     font-weight: bold;
@@ -48,55 +44,57 @@ body{
     text-transform: uppercase;
     background-color: transparent;
     border-color: #31a8dd33;
-    border-image-slice: 10;
-    margin-top: 120px;
-}
-
-.banner .banner-content button:hover {
-    background: linear-gradient(
-        #3BA1CD,
-        #1572B7);
-    color: #f5f5f5;
+    margin-top: 40px;
     cursor: pointer;
-    border-radius: 30px;
     transition: 0.5s;
 }
 
-.banner .banner-content button:active {
-    background: linear-gradient(
-        #3BA1CD,
-        #1572B7);
+.banner-content button:hover {
+    background: linear-gradient(#3BA1CD, #1572B7);
     color: #f5f5f5;
-    cursor: pointer;
     border-radius: 30px;
-    transition: 0.5s;
 }
 
-section{
-    margin: 100px auto;
-}
-
-h2{
+.banner-content button a{
+    text-decoration: none;
     color: #f5f5f5;
-    font-size: 45px;
+}
+
+/* Main Content */
+main {
+    margin: 50px auto;
+}
+
+/* Course Content */
+#course-content {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+#course-content h2 {
+    color: #f5f5f5;
+    font-size: 2.5rem; 
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
-#course-content{
-    width: 800px;
-    text-align: center;
+#course-content p {
+    color: #f5f5f5;
+    font-size: 1.25rem;
+    margin: 16px 0;
 }
 
-#course-content .modules-list{
+.modules-list {
     margin: 24px 0;
 }
 
-#course-content .modules-list .module{
+.module {
     color: #f5f5f5;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto 24px;
     border: 1px solid #33A8DB;
     background-color: #252525;
@@ -105,16 +103,7 @@ h2{
     box-shadow: inset -5px 6px 8px #201f24;
 }
 
-#course-content p{
-    color: #f5f5f5;
-    font-size: 20px;
-    margin: 16px 0;
-}
-
-#course-content .modules-list .module span {
-    color: #33A8DB;
-}
-
+/* Transform World Section */
 #transform-world {
     height: 300px;
     background-size: cover;
@@ -122,41 +111,95 @@ h2{
     background-attachment: fixed;
     border-top: 1px solid #33A8DB80;
     border-bottom: 1px solid #33A8DB80;
-    padding: 200px;
-  }
-
-  #transform-world p{
-    color: #f5f5f5;
-    font-size: 45px;
-    font-weight:bolder;
-    letter-spacing: 2px;
-    text-transform: lowercase;
-    max-width: 200px;
-    text-shadow: 3px 2px #33A8DB;
-  }
-
-  #professional-challenges{
-    width: 800px;
+    padding: 100px 20px;
     text-align: center;
-  }
+}
 
-  #professional-challenges img{
+#transform-world p {
+    color: #f5f5f5;
+    font-size: 2.5rem; 
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+/* Professional Challenges Section */
+#professional-challenges {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#professional-challenges img {
+    width: 100%;
+    max-width: 500px;
     margin: 32px 0;
 }
 
-  #professional-challenges p{
+#professional-challenges p {
     color: #f5f5f5;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 16px 0;
 }
 
-footer{
-    color: #f5f5f5;
+/* Footer */
+footer {
     text-align: center;
     margin: 32px 0;
-    background-image: linear-gradient(
-        #00000099,
-        #31a8dd33,
-        #00000099),
-        url('../images/banner.png');
+    background-image: linear-gradient(#00000099, #31a8dd33, #00000099), url('../images/banner.png');
+    padding: 20px;
+}
+
+footer p {
+    color: #f5f5f5;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+
+    #course-content h2 {
+        font-size: 2rem;
+    }
+
+    #transform-world p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 80vh; 
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    #course-content h2 {
+        font-size: 1.5rem;
+    }
+
+    #transform-world p {
+        font-size: 1.5rem;
+    }
+
+    #professional-challenges p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
